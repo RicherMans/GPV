@@ -6,7 +6,7 @@ This repository contains the evaluation script as well as the pretrained models 
 
 
 
-![Results](https://raw.githubusercontent.com/RicherMans/GPV/blob/master/figures/predictions.pdf)
+![Results](https://github.com/RicherMans/GPV/blob/master/figures/predictions.pdf)
 
 
 
