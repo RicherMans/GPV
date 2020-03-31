@@ -2,11 +2,11 @@
 
 This repository contains the evaluation script as well as the pretrained models from our paper [GPVAD: Towards noise robust voice activity detection via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
 
-[Framework](figures/framework.pdf)
+![Framework](figures/framework.png)
 
 
 
-[Results](figures/predictions.pdf)
+![Results](figures/predictions.png)
 
 
 
