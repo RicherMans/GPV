@@ -1,6 +1,6 @@
-# GPVAD: Towards noise robust voice activity detection via weakly supervised sound event detection
+# Voice activity detection in the wild via weakly supervised sound event detection
 
-This repository contains the evaluation script as well as the pretrained models from our paper [GPVAD: Towards noise robust voice activity detection via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
+This repository contains the evaluation script as well as the pretrained models from our paper [Voice activity detection in the wild via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
 
 ![Framework](figures/framework.png)
 
