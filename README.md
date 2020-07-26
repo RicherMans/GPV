@@ -9,6 +9,23 @@ This repository contains the evaluation script as well as the pretrained models 
 ![Results](figures/predictions.png)
 
 
+## Results (from the paper)
+
+| Model | F1-macro  | F1-micro  | AUC       | FER       | Event-F1 |
+|-------|-----------|-----------|-----------|-----------|----------|
+| VAD-C | **96.55** | **97.43** | **99.78** | **2.57**  | **78.9** |
+| GPV-B | 86.24     | 88.41     | 96.55     | 11.59     | 21.00    |
+| GPV-F | 95.58     | 95.96     | 99.07     | 4.01      | 73.70    |
+| VAD-C | **85.96** | **90.28** | **97.07** | **9.71**  | **47.5** |
+| GPV-B | 73.90     | 75.75     | 89.99     | 24.25     | 8.0      |
+| GPV-F | 81.99     | 84.26     | 94.63     | 15.74     | 35.4     |
+| VAD-C | 77.93     | 78.08     | 87.87     | 21.92     | 34.4     |
+| GPV-B | 77.95     | 75.75     | 89.12     | 19.65     | 24.3     |
+| GPV-F | **83.50** | **84.53** | **91.80** | **15.47** | **44.8** |
+
+
+
+
 
 
 The pretrained models from the paper can be found in `pretrained/`, since they are all rather small (2.7 M), they can also be deployed for other datasets.
