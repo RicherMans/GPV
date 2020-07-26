@@ -164,21 +164,24 @@ def main():
                     pbar.update()
                     output_dfs.append(pred_label_df)
 
-    full_prediction_df = pd.concat(output_dfs).reset_index()
-    prediction_df = full_prediction_df[full_prediction_df['event_label'] ==
-                                       'Speech']
+    if len(output_dfs) > 0:
+        full_prediction_df = pd.concat(output_dfs).reset_index()
+        prediction_df = full_prediction_df[full_prediction_df['event_label'] ==
+                                        'Speech']
 
-    if args.output_path:
-        args.output_path = Path(args.output_path)
-        args.output_path.mkdir(parents=True, exist_ok=True)
-        prediction_df.to_csv(args.output_path / 'speech_predictions.tsv',
-                             sep='\t',
-                             index=False)
-        full_prediction_df.to_csv(args.output_path / 'all_predictions.tsv',
-                                  sep='\t',
-                                  index=False)
-        logger.info(f"Putting results also to dir {args.output_path}")
-    print(prediction_df.to_markdown(showindex=False))
+        if args.output_path:
+            args.output_path = Path(args.output_path)
+            args.output_path.mkdir(parents=True, exist_ok=True)
+            prediction_df.to_csv(args.output_path / 'speech_predictions.tsv',
+                                sep='\t',
+                                index=False)
+            full_prediction_df.to_csv(args.output_path / 'all_predictions.tsv',
+                                    sep='\t',
+                                    index=False)
+            logger.info(f"Putting results also to dir {args.output_path}")
+        print(prediction_df.to_markdown(showindex=False))
+    else:
+        print("No Speech Found!")
 
 
 if __name__ == "__main__":
