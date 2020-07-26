@@ -97,7 +97,7 @@ def main():
                         help='Output folder to save predictions if necessary')
     parser.add_argument('-th',
                         '--threshold',
-                        default=(0.75, 0.2),
+                        default=(0.5, 0.1),
                         type=float,
                         nargs="+")
     args = parser.parse_args()
