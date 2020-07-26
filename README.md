@@ -1,6 +1,6 @@
 # Voice activity detection in the wild via weakly supervised sound event detection
 
-This repository contains the evaluation script as well as the pretrained models from our paper [Voice activity detection in the wild via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
+This repository contains the evaluation script as well as the pretrained models from our Interspeech2020 paper [Voice activity detection in the wild via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
 
 ![Framework](figures/framework.png)
 
