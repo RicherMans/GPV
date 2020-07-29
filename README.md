@@ -2,6 +2,8 @@
 
 This repository contains the evaluation script as well as the pretrained models from our Interspeech2020 paper [Voice activity detection in the wild via weakly supervised sound event detection](https://arxiv.org/abs/2003.12222).
 
+The aim of our approach is to provide general-purpose VAD models (GPVAD), which are noise-robust in real-world scearios and not only in synthetic noise scenarios.
+
 ![Framework](figures/framework.png)
 
 
