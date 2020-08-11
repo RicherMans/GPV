@@ -54,7 +54,8 @@ Furthermore, if one wises to simply run inference, please utilize the `forward.p
 
 The requirements are:
 ```
-torch==1.4.1
+torch==1.5.0
+numba==0.48
 loguru==0.4.0
 pandas==1.0.3
 sed_eval==0.2.1
