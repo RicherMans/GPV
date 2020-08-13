@@ -91,3 +91,21 @@ Other options include:
 1. `-model`: The three models can be adjusted via the `-model` option. Three models are available: `gpvf`, `gpvb` and `vadc`.
 2. `-th`: One can pass via the `-th` option either two thresholds (then double threshold is used), otherwise if only a single value has been given, common binarization is utilized. Our paper results solely utilized `-th 0.5 0.1`. Not that double thresholding is only affecting `gpvf` due to its large amount of output events (`527`).
 3. `-o`: Outputs the predictions to the given directory, e.g., `python3 forward.py -w myaudio.mp3 -o myaudio_predictions`
+
+# Citation
+
+If you use this repo in your work (or compare to other VAD methods), please cite:
+
+```
+@article{Dinkel2020,
+archivePrefix = {arXiv},
+arxivId = {2003.12222},
+author = {Dinkel, Heinrich and Chen, Yefei and Wu, Mengyue and Yu, Kai},
+eprint = {2003.12222},
+month = {Mar},
+title = {{Voice activity detection in the wild via weakly supervised sound event detection}},
+url = {http://arxiv.org/abs/2003.12222},
+year = {2020}
+}
+```
+
