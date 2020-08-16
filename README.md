@@ -79,7 +79,7 @@ pip3 install -r requirements.txt
 python3 forward.py -w YOURAUDIOFILE.mp3
 ```
 
-### Advanced Usage (Not really)
+### Advanced Usage 
 
 Two possible input types can be used for the `forward.py` script.
 
