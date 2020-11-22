@@ -97,15 +97,14 @@ Other options include:
 If you use this repo in your work (or compare to other VAD methods), please cite:
 
 ```
-@article{Dinkel2020,
-archivePrefix = {arXiv},
-arxivId = {2003.12222},
-author = {Dinkel, Heinrich and Chen, Yefei and Wu, Mengyue and Yu, Kai},
-eprint = {2003.12222},
-month = {Mar},
-title = {{Voice activity detection in the wild via weakly supervised sound event detection}},
-url = {http://arxiv.org/abs/2003.12222},
-year = {2020}
+@inproceedings{Dinkel2020,
+  author={Heinrich Dinkel and Yefei Chen and Mengyue Wu and Kai Yu},
+  title={{Voice Activity Detection in the Wild via Weakly Supervised Sound Event Detection}},
+  year=2020,
+  booktitle={Proc. Interspeech 2020},
+  pages={3665--3669},
+  doi={10.21437/Interspeech.2020-0995},
+  url={http://dx.doi.org/10.21437/Interspeech.2020-0995}
 }
 ```
 
