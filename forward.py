@@ -35,7 +35,7 @@ def extract_feature(wavefilepath, **kwargs):
         wav = wav.mean(-1)
     wav = librosa.resample(wav, sr, target_sr=SAMPLE_RATE)
     return np.log(
-        librosa.feature.melspectrogram(wav.astype(np.float32), sr, **kwargs) +
+        librosa.feature.melspectrogram(wav.astype(np.float32), SAMPLE_RATE, **kwargs) +
         EPS).T
 
 
