@@ -4,6 +4,10 @@ This repository contains the evaluation script as well as the pretrained models 
 
 The aim of our approach is to provide general-purpose VAD models (GPVAD), which are noise-robust in real-world scearios and not only in synthetic noise scenarios.
 
+**Edit 2021.05.11** You are not satisfied with the performance provided by GPV? Checkout our follow-up work [Data-driven GPVAD](https://github.com/RicherMans/Datadriven-GPVAD).
+There we also provide the training scripts for the models.
+
+
 ![Framework](figures/framework.png)
 
 
@@ -106,5 +110,18 @@ If you use this repo in your work (or compare to other VAD methods), please cite
   doi={10.21437/Interspeech.2020-0995},
   url={http://dx.doi.org/10.21437/Interspeech.2020-0995}
 }
+
+@article{Dinkel2021,
+author = {Dinkel, Heinrich and Wang, Shuai and Xu, Xuenan and Wu, Mengyue and Yu, Kai},
+doi = {10.1109/TASLP.2021.3073596},
+issn = {2329-9290},
+journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+pages = {1542--1555},
+title = {{Voice Activity Detection in the Wild: A Data-Driven Approach Using Teacher-Student Training}},
+url = {https://ieeexplore.ieee.org/document/9405474/},
+volume = {29},
+year = {2021}
+}
+
 ```
 
