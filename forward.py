@@ -30,10 +30,16 @@ DEVICE = torch.device(DEVICE)
 
 
 def extract_feature(wavefilepath, **kwargs):
-    wav, sr = sf.read(wavefilepath, dtype='float32')
+    _, file_extension = os.path.splitext(wavefilepath)
+    if file_extension == '.wav':
+        wav, sr = sf.read(wavefilepath, dtype='float32')
+    if file_extension == '.mp3':
+        wav, sr = librosa.load(wavefilepath)
+    elif file_extension not in ['.mp3', '.wav']:
+        raise NotImplementedError('Audio extension not supported... yet ;)')
     if wav.ndim > 1:
         wav = wav.mean(-1)
-    wav = librosa.resample(wav, sr, target_sr=SAMPLE_RATE)
+        wav = librosa.resample(wav, sr, target_sr=SAMPLE_RATE)
     return np.log(
         librosa.feature.melspectrogram(wav.astype(np.float32), SAMPLE_RATE, **kwargs) +
         EPS).T
@@ -165,7 +171,7 @@ def main():
                     output_dfs.append(pred_label_df)
 
     if len(output_dfs) > 0:
-        full_prediction_df = pd.concat(output_dfs).reset_index()
+        full_prediction_df = pd.concat(output_dfs).sort_values(by='onset',ascending=True).reset_index()
         prediction_df = full_prediction_df[full_prediction_df['event_label'] ==
                                         'Speech']
 
