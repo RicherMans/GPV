@@ -1,6 +1,6 @@
 torch==1.5.0
 numba==0.48
-loguru==0.4.0
+loguru==0.5.3
 pandas==1.0.3
 sed_eval==0.2.1
 numpy==1.18.2
